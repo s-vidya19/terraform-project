@@ -6,7 +6,7 @@ region = "ap-south-1"
 resource "aws_instance" "one" {
   ami             = "ami-00fa32593b478ad6e"
   instance_type   = "t2.micro"
-  key_name        = "terra"
+  key_name        = "terrra"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-south-1a"
   user_data       = <<EOF
