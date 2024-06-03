@@ -25,7 +25,7 @@ EOF
 resource "aws_instance" "two" {
   ami             = "ami-00fa32593b478ad6e"
   instance_type   = "t2.micro"
-  key_name        = "terra"
+  key_name        = "terrra"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-south-1b"
   user_data       = <<EOF
@@ -44,7 +44,7 @@ EOF
 resource "aws_instance" "three" {
   ami             = "ami-00fa32593b478ad6e"
   instance_type   = "t2.micro"
-  key_name        = "terra"
+  key_name        = "terrra"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-south-1a"
   tags = {
@@ -55,7 +55,7 @@ resource "aws_instance" "three" {
 resource "aws_instance" "four" {
   ami             = "ami-00fa32593b478ad6e"
   instance_type   = "t2.micro"
-  key_name        = "terra"
+  key_name        = "terrra"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-south-1b"
   tags = {
